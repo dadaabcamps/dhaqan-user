@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "668838851245",
+    "firebase_url": "https://dhaqan-96ce7.firebaseio.com",
+    "project_id": "dhaqan-96ce7",
+    "storage_bucket": "dhaqan-96ce7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668838851245:android:cc3507d64c99257a",
+        "android_client_info": {
+          "package_name": "com.example.ifoict.dhaqan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668838851245-cv1piqa0idfaivih4k41efvhb018ddfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ifoict.dhaqan",
+            "certificate_hash": "4adb9ce8a3a6b7142000f429c717c1b49891b421"
+          }
+        },
+        {
+          "client_id": "668838851245-4d2pn2ehid551rmfq4koe3btll59hp27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ifoict.dhaqan",
+            "certificate_hash": "76aeff526b044b6ddd88e9cd9fe9ab08e7a75fc5"
+          }
+        },
+        {
+          "client_id": "668838851245-ofkalppk2c85tr7vbc3u5u7nuf1i29be.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDerFNa2p85oJ3d5lVRr2F96_hamKNim6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668838851245-ofkalppk2c85tr7vbc3u5u7nuf1i29be.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668838851245:android:23551267601398cf",
+        "android_client_info": {
+          "package_name": "com.drcdadaab.dhaqanuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668838851245-cr4u0vgeu6879hdmpm9bf0197jco1j7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drcdadaab.dhaqanuser",
+            "certificate_hash": "4adb9ce8a3a6b7142000f429c717c1b49891b421"
+          }
+        },
+        {
+          "client_id": "668838851245-ofkalppk2c85tr7vbc3u5u7nuf1i29be.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDerFNa2p85oJ3d5lVRr2F96_hamKNim6I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668838851245-ofkalppk2c85tr7vbc3u5u7nuf1i29be.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
