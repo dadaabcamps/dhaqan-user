@@ -28,6 +28,7 @@ public class DetailActivity extends AppCompatActivity {
         textViewDhaqanContent.setText(recievedContent);
         textViewDhaqanAuthor.setText(recievedAuthor);
 
+        getSupportActionBar().setTitle(recievedTitle);
     }
 
 }
