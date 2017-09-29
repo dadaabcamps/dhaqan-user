@@ -20,18 +20,20 @@ import com.google.firebase.database.Query;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PoemsFragment extends Fragment {
-        private static final String TAG = MainActivity.class.getSimpleName();
-        private static final String CATEGORY_POEM = "Poem";
-        RecyclerView rv;
-        LinearLayoutManager linearLayoutManager;
-        DatabaseReference db;
-//    FirebaseAuth mAuth;
-        FirebaseRecyclerAdapter<Article, ArticleViewHolder> firebasenewsRecycleAdapter;
-        ProgressBar progressBarPoemlist;
+public class StoriesFragment extends Fragment {
 
-    public PoemsFragment(){
-            // Required empty public constructor
+
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String CATEGORY_STORIES = "Story";
+    RecyclerView rv;
+    LinearLayoutManager linearLayoutManager;
+    DatabaseReference db;
+    //    FirebaseAuth mAuth;
+    FirebaseRecyclerAdapter<Article, ArticleViewHolder> firebasenewsRecycleAdapter;
+    ProgressBar progressBarStoriesList;
+
+    public StoriesFragment(){
+        // Required empty public constructor
     }
 
 
@@ -39,20 +41,20 @@ public class PoemsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView=inflater.inflate(R.layout.fragment_poems, container, false);
+        View rootView=inflater.inflate(R.layout.fragment_stories, container, false);
         //Initialize Firebase DB
-         db = FirebaseDatabase.getInstance().getReference();
+        db = FirebaseDatabase.getInstance().getReference();
         //SETUP RECYCLER
-        rv = (RecyclerView) rootView.findViewById(R.id.recyclerViewPoemList);
+        rv = (RecyclerView) rootView.findViewById(R.id.recyclerViewStoriesList);
         linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setStackFromEnd(false);
 
 
 
-        progressBarPoemlist = (ProgressBar) rootView.findViewById(R.id.progressBarPoemlist);
-        progressBarPoemlist.setVisibility(View.VISIBLE);
+        progressBarStoriesList = (ProgressBar) rootView.findViewById(R.id.progressBarStoriesList);
+        progressBarStoriesList.setVisibility(View.VISIBLE);
 
-        Query query = db.child("Articles").orderByChild("category").equalTo(CATEGORY_POEM);
+        Query query = db.child("Articles").orderByChild("category").equalTo(CATEGORY_STORIES);
 
         firebasenewsRecycleAdapter = new FirebaseRecyclerAdapter<Article, ArticleViewHolder>(Article.class, R.layout.article_item_list, ArticleViewHolder.class, query) {
             @Override
@@ -60,14 +62,14 @@ public class PoemsFragment extends Fragment {
                 viewHolder.textViewListArticleTitle.setText(model.getTitle());
                 viewHolder.textViewListArticleCategory.setText(model.getCategory());
                 viewHolder.textViewListArticleAuthor.setText(model.getAuthor());
-                progressBarPoemlist.setVisibility(View.GONE);
+                progressBarStoriesList.setVisibility(View.GONE);
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         openDetailActivity(model.getId(), model.getTitle(), model.getCategory(), model.getAuthor(), model.getContent());
                     }
                 });
-    }
+            }
             private void openDetailActivity(String id, String title, String category, String author, String content) {
                 Intent articleIntent = new Intent(getActivity(),  DetailActivity.class);
                 articleIntent.putExtra("idKey", id);
@@ -83,3 +85,4 @@ public class PoemsFragment extends Fragment {
         return rootView;
     }
 }
+

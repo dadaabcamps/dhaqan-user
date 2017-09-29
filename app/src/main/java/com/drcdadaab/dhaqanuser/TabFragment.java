@@ -33,7 +33,7 @@ public class TabFragment extends Fragment {
 
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
-    public static int int_items = 4 ;
+    public static int int_items = 5 ;
 
     @Nullable
     @Override
@@ -70,6 +70,7 @@ public class TabFragment extends Fragment {
                 case 1 : return new ProverbsFragment();
                 case 2 : return new PoemsFragment();
                 case 3 : return new SongsFragment();
+                case 4 : return new StoriesFragment();
             }
             return null;
         }
@@ -93,6 +94,8 @@ public class TabFragment extends Fragment {
                     return getResources().getString(R.string.nav_poems);
                 case 3 :
                     return getResources().getString(R.string.nav_songs);
+                case 4 :
+                    return getResources().getString(R.string.nav_stories);
             }
             return null;
         }
