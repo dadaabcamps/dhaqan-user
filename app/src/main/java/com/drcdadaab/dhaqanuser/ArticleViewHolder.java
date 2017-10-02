@@ -16,7 +16,7 @@ public class ArticleViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         this.mView = itemView;
         textViewListArticleTitle = (TextView) itemView.findViewById(R.id.textViewListArticleTitle);
-        textViewListArticleCategory = (TextView) itemView.findViewById(R.id.textViewListArticleCategory);
+//        textViewListArticleCategory = (TextView) itemView.findViewById(R.id.textViewListArticleCategory);
         textViewListArticleAuthor = (TextView) itemView.findViewById(R.id.textViewListArticleAuthor);
     }
 

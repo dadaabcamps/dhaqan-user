@@ -61,7 +61,7 @@ public class ReligiousFragment extends Fragment {
             @Override
             protected void populateViewHolder(ArticleViewHolder viewHolder, final Article model, final int position) {
                 viewHolder.textViewListArticleTitle.setText(model.getTitle());
-                viewHolder.textViewListArticleCategory.setText(model.getCategory());
+//                viewHolder.textViewListArticleCategory.setText(model.getCategory());
                 viewHolder.textViewListArticleAuthor.setText(model.getAuthor());
                 progressBarReligionList.setVisibility(View.GONE);
                 viewHolder.mView.setOnClickListener(new View.OnClickListener() {
